@@ -2,7 +2,7 @@
 	"name": "react-redux-router",
 	"version": "1.0.0",
 	"description": "Basic skeleton codebase for React/Redux/Router applications.",
-	"engine": {
+	"engines": {
 		"node": "14.4.0"
 	},
 	"scripts": {
