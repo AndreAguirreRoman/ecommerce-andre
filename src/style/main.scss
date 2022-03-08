@@ -1,28 +1,55 @@
 html {
-    font-size: 62.5%; // 1rem is 10px
-}
+	font-size: 62.5%;
 
+	background-color: #ebebeb;
+}
+body {
+	font-family: 'Glory',
+		sans-serif;
+	color: rgba(0, 0, 0, 0.8);
+}
+h1 {
+	font-size: 1rem;
+}
 *,
 *::after,
 *::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-family: 'montserrat';
+	padding: 0;
+	margin: 0;
+	box-sizing: inherit;
 }
 
-body {
-    overflow-x: hidden;
-    font-weight: normal;
+@import './layout';
+@import './colors';
+@import './mixins.scss';
+@import './headernavbar.scss';
+@import './searchbar.scss';
+@import './cart/cart.scss';
+@import './cart/cart-item.scss';
+@import './auth/signin.scss';
+@import './auth/signup.scss';
+@import './page-title.scss';
+@import './formfields.scss';
+@import './home.scss';
+@import './all-products.scss';
+@import './product-design.scss';
+@import './carousel.scss';
+@import './footer.scss';
+@import './productPage.scss';
+@import './products.scss';
+@import './payment/paymentInformation.scss';
+@import './details.scss';
+@import './results.scss';
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-tap-highlight-color: transparent;
-}
+@import './account/account.scss';
+@import './account/account-information.scss';
+@import './account/account-information-models.scss';
+@import './account/purchase-history.scss';
+@import './account/addresses';
+@import './account/edit-address.scss';
 
-.app {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-}
+@import './order/order.scss';
+@import './order/payment.scss';
+@import './order/cc.scss';
+@import './order/address.scss';
+@import './order/checkout.scss';

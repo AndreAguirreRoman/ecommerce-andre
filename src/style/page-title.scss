@@ -1,0 +1,13 @@
+.page-title {
+	color: #111;
+	font-family: 'Glory';
+	font-size: 30px;
+	font-weight: 500;
+
+	margin-top: 38px;
+	margin-bottom: 59px;
+
+	@media screen and (max-width: 390px) {
+		font-size: 5rem;
+	}
+}
