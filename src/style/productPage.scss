@@ -6,7 +6,7 @@
 	grid-row: content-s/content-e;
 	grid-column: extra-s/extra-e;
 
-	@media screen and (max-width: 390px) {
+	@media screen and (max-width: 414px) {
 		overflow: hidden;
 	}
 
@@ -23,7 +23,7 @@
 		grid-template-rows: [heading-s] 30px[heading-e render-s] 1fr[render-e footer-s] 10px[footer-e];
 		grid-template-columns: 100px[images-s]1.8fr[images-e content-s]2fr[content-e payment-form-s] 1fr[payment-form-e]30px;
 
-		@media screen and (max-width: 390px) {
+		@media screen and (max-width: 414px) {
 			grid-template-rows: [heading-s] 30px[heading-e images-s].5fr [images-e render-s] 1fr[render-e footer-s] 10px[footer-e];
 			grid-template-columns: [s]1fr[e];
 			.product-render__wrapper-information-price {

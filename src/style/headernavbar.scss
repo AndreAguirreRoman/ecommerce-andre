@@ -6,7 +6,7 @@
 	grid-template-rows: 1fr;
 	grid-template-columns: 10px [logo-s] 0.5fr [ logo-e searchbar-s]9fr [ searchbar-e links-s] 2.2fr [links-e];
 
-	@media screen and (max-width: 390px) {
+	@media screen and (max-width: 414px) {
 		width: 100%;
 		height: 100px;
 		grid-template-columns: 10px [logo-s] 1fr [ logo-e searchbar-s]1fr [ searchbar-e links-s] 1fr [links-e];
@@ -89,7 +89,7 @@
 		font-size: 1.7rem;
 		padding-right: 10px;
 
-		@media screen and (max-width: 390px) {
+		@media screen and (max-width: 414px) {
 			a {
 				p {
 					display: none;
@@ -136,7 +136,7 @@
 	font-weight: 300;
 	font-size: 1.2rem;
 
-	@media screen and (max-width: 390px) {
+	@media screen and (max-width: 414px) {
 		width: 98.7%;
 		height: 70px;
 		column-gap: 7px;

@@ -1,13 +1,13 @@
 .all-products__wrapper {
 	width: 191px;
 
-	@media screen and (max-width: 390px) {
+	@media screen and (max-width: 414px) {
 		width: 382px;
 	}
 }
 
 .product-design-item {
-	@media screen and (max-width: 390px) {
+	@media screen and (max-width: 414px) {
 		width: 150px;
 		&__main {
 			height: 150px;

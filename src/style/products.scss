@@ -7,7 +7,7 @@
 		color: $title;
 	}
 
-	@media screen and (max-width: 390px) {
+	@media screen and (max-width: 414px) {
 		.home__products-main-wrapper {
 			width: 350px;
 		}
@@ -19,7 +19,7 @@
 		width: 1070px;
 		overflow: hidden;
 
-		@media screen and (max-width: 390px) {
+		@media screen and (max-width: 414px) {
 			overflow: scroll;
 			width: 350px;
 		}

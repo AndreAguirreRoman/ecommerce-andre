@@ -11,7 +11,7 @@
 			210px
 		)
 		[extra-e];
-	@media screen and (max-width: 390px) {
+	@media screen and (max-width: 414px) {
 		width: 100%;
 		grid-template-columns: [extra-s]20px[s]1fr[e]20px[extra-e];
 		grid-template-rows: [carousel-s] 100px [carousel-e product-s] 1fr [product-e footer-home-s] 40px[footer-home-e];
@@ -49,7 +49,7 @@
 		// }
 	}
 	&__footer {
-		@media screen and (max-width: 390px) {
+		@media screen and (max-width: 414px) {
 			font-size: 3rem;
 			.footer__copyright {
 				padding-bottom: 50px;

@@ -2,7 +2,7 @@
 	grid-column: s/e;
 	grid-row: content-s/content-e;
 
-	@media screen and (max-width: 390px) {
+	@media screen and (max-width: 414px) {
 		width: 360px;
 		overflow: hidden;
 		.account-information {
@@ -60,7 +60,7 @@
 			padding-bottom: 10px;
 
 			&__title {
-				@media screen and (max-width: 390px) {
+				@media screen and (max-width: 414px) {
 					font-size: 5rem;
 				}
 				font-size: 2rem;
@@ -89,7 +89,7 @@
 	}
 }
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 414px) {
 	.form-button-long-gray__button {
 		width: 360px;
 		height: 70px;
