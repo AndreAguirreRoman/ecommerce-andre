@@ -8,23 +8,32 @@
 
 .product-design-item {
 	@media screen and (max-width: 390px) {
-		width: 382px;
+		width: 150px;
+		&__main {
+			height: 150px;
+			margin-bottom: 50px;
+		}
 
 		.product-design-item__main-item-wrapper__info {
 			height: 80px;
+
 			&-brand,
 			&-price {
-				font-size: 3rem;
-				height: 40px;
+				font-size: 1.8rem;
+				height: 50px;
+				width: 100px;
+			}
+			&-price {
+				height: 0px;
 			}
 			&-cart i {
-				font-size: 4rem;
+				font-size: 2rem;
 			}
 		}
 
 		.product-design-item__main-item-wrapper__img
 			img {
-			width: 382px;
+			width: 150px;
 		}
 	}
 

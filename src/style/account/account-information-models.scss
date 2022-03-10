@@ -77,12 +77,13 @@
 		display: flex;
 		width: 940px;
 		@media screen and (max-width: 390px) {
-			height: 140px;
+			height: 70px;
+			width: 360px;
 			.account-addresses__wrapper-data {
 				&__info {
 					&-street,
 					&-state {
-						font-size: 5rem;
+						font-size: 2rem;
 					}
 				}
 			}

@@ -2,6 +2,11 @@
 	grid-column: s/e;
 	grid-row: extra-s/extra-e;
 
+	@media screen and (max-width: 390px) {
+		width: 350px;
+		overflow: hidden;
+	}
+
 	&__title {
 		display: flex;
 		width: 940px;
@@ -35,8 +40,7 @@
 
 	@media screen and (max-width: 390px) {
 		grid-template-columns: 1fr 1fr;
-		padding-left: 70px;
-		margin-bottom: 400px;
+		width: 360px;
 	}
 	&__wrapper-item {
 		padding-left: 22px;
@@ -74,6 +78,10 @@
 				display: grid;
 				grid-template-columns: [info-s]150px[info-e bttn-s]1fr[bttn-e];
 				grid-template-rows: [s]1fr[m]1fr[e];
+
+				@media screen and (max-width: 390px) {
+					grid-template-columns: [info-s]100px[info-e bttn-s]1fr[bttn-e];
+				}
 
 				&-brand,
 				&-price {

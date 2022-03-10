@@ -7,6 +7,12 @@
 		color: $title;
 	}
 
+	@media screen and (max-width: 390px) {
+		.home__products-main-wrapper {
+			width: 350px;
+		}
+	}
+
 	.home__products-main-wrapper-products {
 		z-index: 1;
 		display: flex;
@@ -15,6 +21,7 @@
 
 		@media screen and (max-width: 390px) {
 			overflow: scroll;
+			width: 350px;
 		}
 
 		.products-box {

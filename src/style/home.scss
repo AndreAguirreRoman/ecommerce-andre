@@ -12,7 +12,13 @@
 		)
 		[extra-e];
 	@media screen and (max-width: 390px) {
+		width: 100%;
 		grid-template-columns: [extra-s]20px[s]1fr[e]20px[extra-e];
+		grid-template-rows: [carousel-s] 100px [carousel-e product-s] 1fr [product-e footer-home-s] 40px[footer-home-e];
+
+		.carousel {
+			width: 100% !important;
+		}
 	}
 	grid-row: content-s/content-e;
 	grid-column: extra-s/extra-e;

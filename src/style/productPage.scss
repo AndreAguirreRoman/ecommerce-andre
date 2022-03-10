@@ -6,6 +6,10 @@
 	grid-row: content-s/content-e;
 	grid-column: extra-s/extra-e;
 
+	@media screen and (max-width: 390px) {
+		overflow: hidden;
+	}
+
 	&__shopcart {
 		transform: translateX(
 				960px
@@ -28,46 +32,30 @@
 			.product-render__wrapper-gallery {
 				grid-row: images-s/images-e;
 				grid-column: s/e;
-				padding-left: 40px;
 			}
 			.product-render__wrapper-information {
 				grid-row: render-s/render-e;
 				grid-column: s/e;
 				grid-template-rows: [title-s]60px[title-e description-s]1fr[description-e footer-s]130px[footer-e];
+				width: 390px;
 				&-brand,
 				&-name,
 				&-description,
 				&-price {
-					font-size: 4rem;
-					padding-left: 40px;
+					font-size: 2rem;
+					padding-left: 20px;
+					width: 360px;
 				}
-
-				&-name {
-					transform: translateX(
-							600px
-						)
-						translateY(-280px);
-					font-size: 6rem;
-					width: 350px;
-				}
-				&-brand {
-					transform: translateX(
-							600px
-						)
-						translateY(-290px);
-					width: 350px;
-				}
-
 				&-price {
 					padding-top: 30px;
 					padding-bottom: 100px;
 				}
 
 				&-cart {
-					width: 600px;
+					width: 300px;
 					height: 100px;
 					font-size: 4rem;
-					margin-left: 240px;
+					margin-left: 45px;
 				}
 			}
 		}

@@ -7,23 +7,23 @@
 	grid-template-columns: 10px [logo-s] 0.5fr [ logo-e searchbar-s]9fr [ searchbar-e links-s] 2.2fr [links-e];
 
 	@media screen and (max-width: 390px) {
-		width: 1115px;
-		height: 130px;
+		width: 100%;
+		height: 100px;
 		grid-template-columns: 10px [logo-s] 1fr [ logo-e searchbar-s]1fr [ searchbar-e links-s] 1fr [links-e];
 		grid-template-rows: 1fr;
 
 		.header-image {
 			&__img {
-				height: 65px;
-				width: 800px;
+				height: 40px;
+				width: 80px;
 			}
 		}
 
 		.header-searchbar {
-			width: 800px;
+			width: 100px;
 			input {
-				height: 60px;
-				font-size: 3rem;
+				height: 40px;
+				font-size: 2rem;
 			}
 		}
 
@@ -137,11 +137,12 @@
 	font-size: 1.2rem;
 
 	@media screen and (max-width: 390px) {
-		width: 1090px;
+		width: 98.7%;
 		height: 70px;
-
+		column-gap: 7px;
+		padding-left: 5px;
 		.navbar__link {
-			font-size: 3rem;
+			font-size: 1.5rem;
 		}
 	}
 
