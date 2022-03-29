@@ -37,7 +37,10 @@
 			transform: translateX(
 					-400px
 				)
-				translateY(-280px);
+				translateY(-290px);
+		}
+		@media screen and (max-width: 1500px) {
+			display: none;
 		}
 	}
 
