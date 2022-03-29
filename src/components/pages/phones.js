@@ -17,7 +17,7 @@ class Phones extends Component {
                 _id: 0,
                 title: <div className='header-icon'>
                     <div className='header-icon__icon'><i className="fas fa-user-circle" ></i></div>
-                    <div className='header-icon__text'>Account & Information</div>
+
                 </div>,
                 active: false,
                 path: '/account'
@@ -93,11 +93,12 @@ class Phones extends Component {
         return (
             <div className='filter'>
                 <PageTitle className={'filter__title'} title={'Phones'} />
-                <div className='filter__cart'>
-                    <ShopCart className={'filter__cart-cart'} />
-                </div>
-                <div className='phones'>
-                    {phones}
+                <div className='filter__items'>
+
+                    <div className='phones'>
+                        {phones}
+                    </div>
+                    <ShopCart className={'filter__items-cart'} />
                 </div>
             </div>
         )

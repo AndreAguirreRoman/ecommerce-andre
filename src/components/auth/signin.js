@@ -14,13 +14,25 @@ class SignIn extends Component {
     componentDidMount() {
         this.props.setHeaderLinks([]);
         this.props.setNavbarLinks([]);
+
+        this.props.fetchUsersGlobal();
+        this.props.testing();
+
     }
 
     onSubmit = (fields) => {
         console.log(fields)
 
     }
+
+
+
+
     render() {
+        const users = this.props.users;
+
+        console.log("nene", users)
+
         return (
             <div className='signin'>
                 <div className='signin-box'>
@@ -33,7 +45,11 @@ class SignIn extends Component {
         )
     }
 }
+function mapStateToProps(state) {
+    console.log(state.user)
+    const { users } = state.user
+    return { users }
+}
 
-
-SignIn = connect(null, actions)(SignIn)
+SignIn = connect(mapStateToProps, actions)(SignIn)
 export default SignIn;

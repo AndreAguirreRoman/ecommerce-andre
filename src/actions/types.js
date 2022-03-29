@@ -24,4 +24,7 @@ export const DELETE_ALL_PRODUCTS = 'DELETE_ALL_PRODUCTS';
 
 
 export const FETCH_USER_NAME = 'FETCH_USER_NAME';
-export const MAKE_PURCHASE = 'MAKE_PURCHASE'
+export const MAKE_PURCHASE = 'MAKE_PURCHASE';
+export const USER_GLOBAL = 'USER_GLOBAL';
+export const LOGIN = 'LOGIN';
+export const TEST = 'TEST';

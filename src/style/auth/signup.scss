@@ -34,6 +34,7 @@
 		align-content: center;
 		grid-row: name-s/name-e;
 		grid-column: s/e;
+		justify-self: center;
 
 		&-first input,
 		&-last input {
@@ -48,13 +49,14 @@
 	&__email {
 		grid-row: email-s/email-e;
 		grid-column: s/e;
+		justify-self: center;
 	}
 	&__password {
 		display: grid;
 		margin-top: 15px;
 		grid-row: password-s/password-e;
 		grid-column: s/e;
-
+		justify-self: center;
 		&-icon {
 			grid-row: password-s/password-e;
 			grid-column: s/e;
@@ -77,13 +79,14 @@
 		}
 		grid-row: rules-s/rules-e;
 		grid-column: s/e;
+		justify-self: center;
 	}
 	&__info {
 		font-size: 12px;
 		margin-top: 5px;
 		grid-row: info-s/info-e;
 		grid-column: s/e;
-
+		justify-self: center;
 		&-agreement-link {
 			@include under-links;
 		}

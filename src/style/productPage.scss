@@ -5,17 +5,18 @@
 	row-gap: 100px;
 	grid-row: content-s/content-e;
 	grid-column: extra-s/extra-e;
+	width: 100vw;
 
 	@media screen and (max-width: 414px) {
-		overflow: hidden;
+		overflow: scroll;
 	}
 
-	&__shopcart {
-		transform: translateX(
-				960px
-			)
-			translateY(-600px);
-	}
+	// &__shopcart {
+	// 	transform: translateX(
+	// 			960px
+	// 		)
+	// 		translateY(-600px);
+	// }
 	&__wrapper {
 		grid-row: wrapper-s/wrapper-e;
 		grid-column: s/e;
@@ -117,6 +118,15 @@
 					outline: none;
 				}
 			}
+		}
+		&-shopcart {
+			grid-column: payment-form-s/payment-form-e;
+			grid-row: render-s/render-e;
+
+			transform: translateX(
+					-40px
+				)
+				translateY(100px);
 		}
 	}
 	&__footer {

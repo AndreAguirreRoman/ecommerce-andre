@@ -134,7 +134,7 @@ class ProductDetail extends Component {
         console.log("state", this.state.productItem)
         return (
             <div className='product-render'>
-                <ShopCart className='product-render__shopcart' />
+
                 <div className='product-render__wrapper'>
 
 
@@ -152,6 +152,11 @@ class ProductDetail extends Component {
                             <p className='product'> Shipping: <b>FREE</b></p>
                         </div>
                         <button onClick={this.handleAddToCart} className='product-render__wrapper-information-cart'>Add to Cart</button>
+                    </div>
+
+                    <div className='product-render__wrapper-shopcart'>
+
+                        <ShopCart className='product-render__wrapper-shopcart-cart' />
                     </div>
 
 

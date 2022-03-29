@@ -32,17 +32,20 @@
 	&__email {
 		grid-row: email-s/email-e;
 		grid-column: s/e;
+		justify-self: center;
 	}
 	&__password {
 		margin-top: 15px;
 		grid-row: password-s/password-e;
 		grid-column: s/e;
+		justify-self: center;
 	}
 	&__info {
 		font-size: 12px;
 		margin-top: 20px;
 		grid-row: info-s/info-e;
 		grid-column: s/e;
+		justify-self: center;
 
 		&-agreement-link {
 			@include under-links;

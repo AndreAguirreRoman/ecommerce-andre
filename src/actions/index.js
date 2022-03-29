@@ -18,7 +18,10 @@ import {
     fetchAddressToEdit,
     editAddress,
     editName,
-    editUserName
+    editUserName,
+    fetchUsersGlobal,
+    login,
+    testing
 } from './user';
 
 import {
@@ -56,5 +59,8 @@ export {
     fetchAddressToEdit,
     editAddress,
     editName,
-    editUserName
+    editUserName,
+    fetchUsersGlobal,
+    login,
+    testing
 }

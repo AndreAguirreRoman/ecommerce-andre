@@ -2,29 +2,42 @@
 	grid-column: s/e;
 	grid-row: extra-s/extra-e;
 
+	grid-template-rows: [title-s]100px[title-e content-s]1fr[content-e];
 	@media screen and (max-width: 414px) {
 		width: 350px;
-		overflow: hidden;
+		overflow: scroll;
 	}
-
+	grid-column: s/e;
+	width: 100%;
 	&__title {
-		display: flex;
-		width: 940px;
-		padding-left: 22px;
-		justify-content: start;
+		grid-row: title-s/title-e;
 
 		@media screen and (max-width: 414px) {
 			padding-left: 90px;
 			font-size: 5rem;
 		}
 	}
+	&__items {
+		display: grid !important;
+		grid-template-columns: [items-s]4fr[items-e cart-s] 1fr [cart-e] !important;
+		grid-template-rows: [s]1fr[e];
+		grid-row: content-s/content-e;
+		width: 100%;
 
-	&__cart {
-		background-color: blue;
-		position: fixed;
-		transform: translateX(
-			720px
-		);
+		.all-products {
+			grid-column: items-s/items-e;
+			grid-row: s/e;
+		}
+		&-cart {
+			grid-column: cart-s/cart-e;
+			background-color: blue;
+			grid-row: s/e;
+
+			transform: translateX(
+					-400px
+				)
+				translateY(-110px);
+		}
 	}
 }
 
@@ -37,6 +50,8 @@
 .video-games {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
+	width: 90vw;
+	justify-items: center;
 
 	@media screen and (max-width: 414px) {
 		grid-template-columns: 1fr 1fr;

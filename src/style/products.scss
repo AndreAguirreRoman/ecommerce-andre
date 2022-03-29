@@ -9,19 +9,18 @@
 
 	@media screen and (max-width: 414px) {
 		.home__products-main-wrapper {
-			width: 350px;
+			width: 89vw;
 		}
 	}
 
 	.home__products-main-wrapper-products {
-		z-index: 1;
 		display: flex;
-		width: 1070px;
-		overflow: hidden;
+		overflow: scroll;
+		width: 90vw;
 
 		@media screen and (max-width: 414px) {
 			overflow: scroll;
-			width: 350px;
+			width: 88vw;
 		}
 
 		.products-box {

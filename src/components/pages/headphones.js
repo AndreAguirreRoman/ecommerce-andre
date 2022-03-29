@@ -93,11 +93,13 @@ class Headphones extends Component {
         return (
             <div className='filter'>
                 <PageTitle className={'filter__title'} title={'Headphones'} />
-                <div className='filter__cart'>
-                    <ShopCart className={'filter__cart-cart'} />
-                </div>
-                <div className='headphones'>
-                    {headphones}
+                <div className='filter__items'>
+
+
+                    <div className='headphones'>
+                        {headphones}
+                    </div>
+                    <ShopCart className={'filter__items-cart'} />
                 </div>
             </div>
         )

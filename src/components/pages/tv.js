@@ -93,11 +93,13 @@ class Tv extends Component {
         return (
             <div className='filter'>
                 <PageTitle className={'filter__title'} title={"TV's"} />
-                <div className='filter__cart'>
-                    <ShopCart className={'filter__cart-cart'} />
-                </div>
-                <div className='tv'>
-                    {tv}
+                <div className='filter__items'>
+
+
+                    <div className='tv'>
+                        {tv}
+                    </div>
+                    <ShopCart className={'filter__items-cart'} />
                 </div>
             </div>
         )

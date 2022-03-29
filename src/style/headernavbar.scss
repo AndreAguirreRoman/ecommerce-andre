@@ -4,7 +4,8 @@
 	grid-column: 1/-1;
 	background-color: $main-blue;
 	grid-template-rows: 1fr;
-	grid-template-columns: 10px [logo-s] 0.5fr [ logo-e searchbar-s]9fr [ searchbar-e links-s] 2.2fr [links-e];
+	grid-template-columns: 10px [logo-s] 0.5fr [ logo-e searchbar-s]7fr [ searchbar-e links-s] 1fr [links-e];
+	width: 100% !important;
 
 	@media screen and (max-width: 414px) {
 		width: 100%;
@@ -20,7 +21,7 @@
 		}
 
 		.header-searchbar {
-			width: 100px;
+			width: 100%;
 			input {
 				height: 40px;
 				font-size: 2rem;
@@ -41,6 +42,7 @@
 	&-image {
 		padding-left: 25px;
 		display: flex;
+		width: 100%;
 		&__img {
 			justify-self: center;
 			align-self: center;
@@ -55,7 +57,16 @@
 	&-searchbar {
 		display: flex;
 		align-items: center;
+		justify-self: center;
 		grid-column: searchbar-s/searchbar-e;
+		width: 100%;
+		.searchbar {
+			width: 100% !important;
+		}
+
+		@media screen and (max-width: 900px) {
+			width: 70%;
+		}
 	}
 
 	&-icon {
@@ -80,6 +91,7 @@
 
 		display: grid;
 		grid-template-rows: [s]1fr [e];
+		column-gap: 5px;
 
 		& > * {
 			grid-row: s/e;
@@ -137,13 +149,23 @@
 	font-size: 1.2rem;
 
 	@media screen and (max-width: 414px) {
-		width: 98.7%;
 		height: 70px;
 		column-gap: 7px;
 		padding-left: 5px;
 		.navbar__link {
 			font-size: 1.5rem;
 		}
+	}
+	@media screen and (max-width: 355px) {
+		column-gap: 7px;
+		padding-left: 5px;
+
+		display: grid;
+		flex-direction: column;
+		.navbar__link {
+			font-size: 1rem;
+		}
+		overflow: scroll;
 	}
 
 	& > * {

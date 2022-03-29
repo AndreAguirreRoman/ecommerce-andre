@@ -93,11 +93,13 @@ class VideoGames extends Component {
         return (
             <div className='filter'>
                 <PageTitle className={'filter__title'} title={'Video Games'} />
-                <div className='filter__cart'>
-                    <ShopCart className={'filter__cart-cart'} />
-                </div>
-                <div className='video-games'>
-                    {videoGames}
+                <div className='filter__items'>
+
+
+                    <div className='video-games'>
+                        {videoGames}
+                    </div>
+                    <ShopCart className={'filter__items-cart'} />
                 </div>
             </div>
         )

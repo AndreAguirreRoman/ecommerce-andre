@@ -1,5 +1,7 @@
 import axios from 'axios';
 
+import store from '../../src/bootstrap';
+
 import {
     SET_USER_PURCHASES,
     SET_PURCHASE_DETAIL,
@@ -12,8 +14,14 @@ import {
     MAKE_PURCHASE,
     ADDRESS_EDIT,
     EDIT_ADDRESS,
-    EDIT_NAME
+    EDIT_NAME,
+    USER_GLOBAL,
+    LOGIN,
+    TEST
 } from './types';
+
+const user_id = 2
+
 
 
 export function setPurchaseDetail(_id) {
@@ -59,7 +67,7 @@ export function purchase(fields) {
 export function editAddress(fields) {
     const data = fields
     return function (dispatch) {
-        axios.put('https://andreaguirre.herokuapp.com/user/address/1', data)
+        axios.put(`https://andreaguirre.herokuapp.com/user/address/${user_id}`, data)
             .then(res => {
                 dispatch({
                     type: EDIT_ADDRESS,
@@ -74,7 +82,7 @@ export function editAddress(fields) {
 export function editName(fields) {
     const data = fields
     return function (dispatch) {
-        axios.put('https://andreaguirre.herokuapp.com/user/1', data)
+        axios.put(`https://andreaguirre.herokuapp.com/user/${user_id}`, data)
             .then(res => {
                 dispatch({
                     type: EDIT_NAME,
@@ -90,7 +98,7 @@ export function editName(fields) {
 
 export function getAddress() {
     return function (dispatch) {
-        axios.get('https://andreaguirre.herokuapp.com/user/address/1')
+        axios.get(`https://andreaguirre.herokuapp.com/user/address/${user_id}`)
             .then(response => {
                 dispatch({
                     type: FETCH_USER_ADDRESS,
@@ -106,7 +114,7 @@ export function getAddress() {
 
 export function fetchUserName() {
     return function (dispatch) {
-        axios.get('https://andreaguirre.herokuapp.com/user/1')
+        axios.get(`https://andreaguirre.herokuapp.com/user/${user_id}`)
             .then(response => {
                 dispatch({
                     type: FETCH_USER_NAME,
@@ -120,7 +128,7 @@ export function fetchUserName() {
 
 export function fetchAddressToEdit() {
     return function (dispatch) {
-        axios.get('https://andreaguirre.herokuapp.com/user/address/1')
+        axios.get(`https://andreaguirre.herokuapp.com/user/address/${user_id}`)
             .then(response => {
                 dispatch({
                     type: ADDRESS_EDIT,
@@ -244,6 +252,42 @@ export function fetchUserPurchases() {
         ]
     })
 }
+
+export function fetchUsersGlobal() {
+
+    return function (dispatch) {
+
+        axios.get('https://andreaguirre.herokuapp.com/users')
+
+            .then(response => {
+
+                dispatch({
+                    type: USER_GLOBAL,
+                    payload: response.data
+                })
+            })
+            .catch(error => {
+                console.log(error)
+            })
+
+    }
+}
+
+export function login(user) {
+    return ({
+        type: LOGIN,
+        payload: { user }
+    })
+
+}
+
+export const testing = (id) => {
+    return (dispatch, getState) => {
+        const state = getState().userReducer;
+        console.log("state", state)
+    }
+}
+
 
 // export const addUser = userObj => {
 //     return (dispatch) => {

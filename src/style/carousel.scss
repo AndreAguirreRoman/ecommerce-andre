@@ -1,8 +1,8 @@
 .carousel {
-	width: 100%;
+	width: 100vw !important;
 
 	@media screen and (max-width: 414px) {
-		width: 1115px !important;
+		width: 100vw !important;
 	}
 	&-container {
 		&__text p {

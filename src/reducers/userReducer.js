@@ -10,7 +10,8 @@ import {
     MAKE_PURCHASE,
     ADDRESS_EDIT,
     EDIT_ADDRESS,
-    EDIT_NAME
+    EDIT_NAME,
+    USER_GLOBAL
 } from '../actions/types';
 
 const INITIAL_STATE = {
@@ -30,7 +31,8 @@ const INITIAL_STATE = {
     user: [],
     cart: [],
     creditCard: {},
-    addressEdit: {}
+    addressEdit: {},
+    users: []
 }
 
 
@@ -126,6 +128,13 @@ export default function (state = INITIAL_STATE, action) {
                 ...state,
                 user: action.payload
             }
+        case USER_GLOBAL:
+
+            return {
+                ...state,
+                users: action.payload
+            }
+
         default: return state;
     }
 }

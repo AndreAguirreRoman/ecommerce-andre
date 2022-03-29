@@ -91,13 +91,17 @@ class Cameras extends Component {
         return (
             <div className='filter'>
                 <PageTitle className={'filter__title'} title={'Cameras'} />
-                <div className='filter__cart'>
-                    <ShopCart className={'filter__cart-cart'} />
+                <div className='filter__items'>
+
+
+
+                    <div className='cameras'>
+                        {cameras}
+                    </div>
+                    <ShopCart className={'filter__items-cart'} />
                 </div>
-                <div className='cameras'>
-                    {cameras}
-                </div>
-            </div>
+
+            </div >
         )
     }
 }
