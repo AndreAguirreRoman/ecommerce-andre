@@ -1,7 +1,7 @@
 .product-render {
 	display: grid;
-	grid-template-rows: [wrapper-s]2fr[wrapper-e footer-s] 30px[footer-e];
-	grid-template-columns: [s]1fr[e];
+	grid-template-rows: [wrapper-s] 2fr [wrapper-e footer-s] 30px [footer-e];
+	grid-template-columns: [s] 1fr [e];
 	row-gap: 100px;
 	grid-row: content-s/content-e;
 	grid-column: extra-s/extra-e;
@@ -21,12 +21,12 @@
 		grid-row: wrapper-s/wrapper-e;
 		grid-column: s/e;
 		display: grid;
-		grid-template-rows: [heading-s] 30px[heading-e render-s] 1fr[render-e footer-s] 10px[footer-e];
-		grid-template-columns: 100px[images-s]1.8fr[images-e content-s]2fr[content-e payment-form-s] 1fr[payment-form-e]30px;
+		grid-template-rows: [heading-s] 30px [heading-e render-s] 1fr [render-e footer-s] 10px [footer-e];
+		grid-template-columns: 100px [images-s] 1.8fr [images-e content-s] 2fr [content-e payment-form-s] 1fr [payment-form-e] 30px;
 
 		@media screen and (max-width: 414px) {
-			grid-template-rows: [heading-s] 30px[heading-e images-s].5fr [images-e render-s] 1fr[render-e footer-s] 10px[footer-e];
-			grid-template-columns: [s]1fr[e];
+			grid-template-rows: [heading-s] 30px [heading-e images-s] .5fr [images-e render-s] 1fr [render-e footer-s] 10px [footer-e];
+			grid-template-columns: [s] 1fr [e];
 			.product-render__wrapper-information-price {
 				padding-bottom: 100px;
 			}
@@ -37,7 +37,7 @@
 			.product-render__wrapper-information {
 				grid-row: render-s/render-e;
 				grid-column: s/e;
-				grid-template-rows: [title-s]60px[title-e description-s]1fr[description-e footer-s]130px[footer-e];
+				grid-template-rows: [title-s] 60px [title-e description-s ] 1fr [description-e footer-s] 130px [footer-e];
 				width: 390px;
 				&-brand,
 				&-name,
@@ -69,8 +69,8 @@
 			grid-column: content-s/content-e;
 			display: grid;
 			height: 100%;
-			grid-template-columns: [s]1fr[e];
-			grid-template-rows: [title-s]60px[title-e description-s]1fr[description-e footer-s]30px[footer-e];
+			grid-template-columns: [s] 1fr [e];
+			grid-template-rows: [title-s] 60px [title-e description-s ] 1fr [description-e footer-s] 30px [footer-e];
 
 			&-brand {
 				font-size: 18px;

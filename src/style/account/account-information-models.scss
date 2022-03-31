@@ -52,6 +52,7 @@
 			font-size: 2rem;
 			padding-bottom: 5px;
 			padding-left: 10px;
+			
 		}
 		&-values {
 			border-radius: 7px;
@@ -75,7 +76,7 @@
 .account-addresses {
 	&__wrapper-data {
 		display: flex;
-		width: 940px;
+		width: 100%;
 		@media screen and (max-width: 414px) {
 			height: 70px;
 			width: 360px;
@@ -102,7 +103,7 @@
 				font-size: 1.3rem;
 			}
 
-			width: 900px;
+			width: 100%;
 		}
 		&__button {
 			display: flex;

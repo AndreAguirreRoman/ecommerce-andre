@@ -73,7 +73,7 @@ class CartProducts extends Component {
                         {
                             products.map(product => {
                                 return (
-                                    <CartItems className='cart-items__products-map' onClick={() => { this.props.deleteProduct(product._id) }} name={product.product.product_name} subtitle={product.product.product_brand} price={product.product.product_price} key={Math.random()} />
+                                    <CartItems className='cart-items__products-map' onClick={() => { this.props.deleteProduct(product._id) }} image={product.product.product_image} name={product.product.product_name} subtitle={product.product.product_brand} price={product.product.product_price} key={Math.random()} />
                                 )
                             })
                         }

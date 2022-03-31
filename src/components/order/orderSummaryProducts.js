@@ -16,7 +16,7 @@ export function OrderSummaryProducts({ className, products }) {
                         return (
                             <div className='order-summary-products__item-product-product' key={product.product.product_id}>
                                 <div className='order-summary-products__item-product-product__image'>
-                                    <img src='https:via.placeholder.com/50x50' />
+                                    <img src={product.product.product_image} />
                                 </div>
                                 <div className='order-summary-products__item-product-product__name'>{product.product.product_name}</div>
                                 <div className='order-summary-products__item-product-product__description'>{product.product.product_brand}</div>

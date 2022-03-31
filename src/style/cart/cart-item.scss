@@ -10,6 +10,10 @@
 		grid-column: image-s/image-e;
 		grid-row: s/e;
 		border-radius: 7px;
+		height: 100px;
+		width: 100px;	
+		object-fit: contain;
+		
 	}
 	&__title {
 		grid-row: s/e;
@@ -61,9 +65,11 @@
 		color: #dc143c;
 		text-decoration: underline;
 		padding-left: 5px;
+		cursor: pointer;
 	}
 }
 
 .cart-items__products-item {
 	height: 330px;
+	overflow: scroll;
 }

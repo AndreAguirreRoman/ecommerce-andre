@@ -33,6 +33,7 @@
 
 	&__button {
 		@include buttons;
+		
 	}
 	&__label {
 		font-size: 14px;
@@ -45,6 +46,9 @@
 	&__button {
 		height: 38px;
 		width: 215px;
+		@media screen and (max-width: 450px) {
+			width: 175px
+		}
 		border-radius: 5px;
 		background-color: $light-blue;
 		border: none;

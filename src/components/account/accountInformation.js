@@ -158,7 +158,7 @@ class AccountInformation extends Component {
                 <PageTitle className='account-information__title' title='Account & Information' />
                 <div className='account-information__user'>
                     <AccountInformationItem className='account-information__user-data-name' title='Name' value={user_first_name} valueTwo={user_last_name} link='account/name' />
-                    <AccountInformationItem className='account-information__user-data-email' title='Email' value={user_email} />
+                    <AccountInformationItem className='account-information__user-data-email' title='Email' value={user_email} link='account' />
 
                 </div>
 

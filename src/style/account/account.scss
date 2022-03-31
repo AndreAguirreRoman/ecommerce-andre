@@ -7,4 +7,18 @@
 .edit-name-form {
 	grid-row: content-s/content-e;
 	grid-column: s/e;
+	justify-self: center;
+	padding-top: 40px;
+
+	.name-button {
+		display: flex;
+		width: 100%;
+		padding-top: 20px;
+		justify-content: center;
+		.edit-name-form__button {
+
+				@include buttons
+			}
+	}
+	
 }

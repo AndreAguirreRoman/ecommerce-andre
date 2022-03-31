@@ -21,8 +21,8 @@ class NameEditForm extends Component {
             <form onSubmit={handleSubmit} className={`${className} edit-name-form`}>
                 <Field className='edit-name-form__first-name' type='firstName' placeholder='First Name' title='First Name' name='user_first_name' component={FormInput} />
                 <Field className='edit-name-form__last-name' type='lastName' placeholder='Last Name' title='Last Name' name='user_last_name' component={FormInput} />
+                <div className='name-button'><button className='edit-name-form__button' onClick={() => console.log('working?')}>UPDATE</button></div>
 
-                <button onClick={() => console.log('working?')}>UPDATE</button>
             </form>
         )
     }

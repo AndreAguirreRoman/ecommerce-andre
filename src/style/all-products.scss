@@ -108,7 +108,17 @@
 				height: 191px;
 				width: 191px;	
 				background-color: white;
+				@media screen and (max-width: 415px){
+					height: 150px;
+					width: 150px;
+				}
 				img {
+					@media screen and (max-width: 415px){
+						height: 110px;
+						width: 110px;
+						padding-left: 0px;
+						padding-top: 20px;
+					}
 					height: 161px;
 					width: 161px;
 					padding-left: 15px;

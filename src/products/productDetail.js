@@ -8,6 +8,8 @@ import Footer from '../components/footer';
 import ShopCart from '../components/cart/shopCart';
 
 
+import history from '../history';
+
 // let images = [
 //     'https://via.placeholder.com/191x188',
 //     'https://via.placeholder.com/191x188',
@@ -54,7 +56,7 @@ class ProductDetail extends Component {
                 _id: 0,
                 title: <div className='header-icon'>
                     <div className='header-icon__icon'><i className="fas fa-user-circle" ></i></div>
-                    <div className='header-icon__text'>Account & Information</div>
+
                 </div>,
                 active: false,
                 path: '/account'
@@ -122,9 +124,7 @@ class ProductDetail extends Component {
 
     handleAddToCart = () => {
         this.props.addProduct(this.state.productItem)
-        if (document.getElementById('shop-cart').classList.contains('cart-hidden')) {
-            document.getElementById('shop-cart').classList.remove('cart-hidden');
-        }
+        history.push('/')
     }
 
 
@@ -153,16 +153,6 @@ class ProductDetail extends Component {
                         </div>
                         <button onClick={this.handleAddToCart} className='product-render__wrapper-information-cart'>Add to Cart</button>
                     </div>
-
-                    <div className='product-render__wrapper-shopcart'>
-
-                        <ShopCart className='product-render__wrapper-shopcart-cart' />
-                    </div>
-
-
-
-
-
                 </div>
                 <div className='product-render__footer'> <Footer className='product-render__footer-footer' /> </div>
 
