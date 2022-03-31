@@ -16,7 +16,7 @@ class ProductDesign extends Component {
 
 
     render() {
-        const { product_id, product_name, product_brand, product_price } = this.props.productItem;
+        const { product_id, product_name, product_brand, product_price, product_image } = this.props.productItem;
         const { className } = this.props;
         return (
             <div className={`${className} product-design-item`}>
@@ -25,7 +25,7 @@ class ProductDesign extends Component {
                     <Link className='product-design-item__main-item' to={`/product/${product_id}`}>
                         <div className='product-design-item__main-item-wrapper'>
                             <div className='product-design-item__main-item-wrapper__img'>
-                                <img src='https://via.placeholder.com/191x188' />
+                                <img src={product_image} />
                             </div>
                         </div>
                     </Link >

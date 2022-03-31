@@ -82,7 +82,7 @@ class Cameras extends Component {
 
 
     render() {
-        const cameras = this.props.products.filter((productItem) => productItem.product_category_name.includes('Smartcamera')).map(productItem => {
+        const cameras = this.props.products.filter((productItem) => productItem.product_subcategory_name.includes('Smartcamera')).map(productItem => {
             return (
                 <ProductDesign key={productItem.product_id} className='cameras__wrapper-item design' productItem={productItem} />
             )

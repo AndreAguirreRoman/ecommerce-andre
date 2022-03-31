@@ -84,7 +84,7 @@ class Tv extends Component {
     }
 
     render() {
-        const tv = this.props.products.filter((productItem) => productItem.product_category_name.includes("TV")).map(productItem => {
+        const tv = this.props.products.filter((productItem) => productItem.product_subcategory_name.includes("TV")).map(productItem => {
             return (
                 <ProductDesign key={productItem.product_id} className='tv__wrapper-item design' productItem={productItem} />
             )

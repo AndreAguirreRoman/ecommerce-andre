@@ -84,7 +84,7 @@ class Phones extends Component {
     }
 
     render() {
-        const phones = this.props.products.filter((productItem) => productItem.product_category_name.includes("Smartphone")).map(productItem => {
+        const phones = this.props.products.filter((productItem) => productItem.product_subcategory_name.includes("Smartphone")).map(productItem => {
             return (
                 <ProductDesign key={productItem.product_id} className='phones__wrapper-item design' productItem={productItem} />
             )

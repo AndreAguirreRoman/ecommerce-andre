@@ -8,12 +8,12 @@ import Footer from '../components/footer';
 import ShopCart from '../components/cart/shopCart';
 
 
-let images = [
-    'https://via.placeholder.com/191x188',
-    'https://via.placeholder.com/191x188',
-    'https://via.placeholder.com/191x188',
-    'https://via.placeholder.com/191x188'
-]
+// let images = [
+//     'https://via.placeholder.com/191x188',
+//     'https://via.placeholder.com/191x188',
+//     'https://via.placeholder.com/191x188',
+//     "https://m.media-amazon.com/images/I/71iO2R+CLjL._AC_SX679_.jpg"
+// ]
 
 
 
@@ -129,8 +129,8 @@ class ProductDetail extends Component {
 
 
     render() {
-        const { product_brand, product_name, product_description, product_price } = this.state.productItem;
-        // console.log("currentId", this.state.productId)
+        const { product_brand, product_name, product_description, product_price, product_image } = this.state.productItem;
+        const images = [product_image]
         console.log("state", this.state.productItem)
         return (
             <div className='product-render'>

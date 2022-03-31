@@ -84,7 +84,7 @@ class Headphones extends Component {
     }
 
     render() {
-        const headphones = this.props.products.filter((productItem) => productItem.product_category_name.includes('Headphones')).map(productItem => {
+        const headphones = this.props.products.filter((productItem) => productItem.product_subcategory_name.includes('Headphones')).map(productItem => {
             return (
                 <ProductDesign key={productItem.product_id} className='headphones__wrapper-item design' productItem={productItem} />
             )

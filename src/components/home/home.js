@@ -129,7 +129,7 @@ class Home extends Component {
         const productsItems = this.props.productItems;
         const cart = this.props.cart;
 
-        const productsSmartphone = productsItems.products.filter((productItem) => productItem.product_category_name.includes('Smartphone'))
+        const productsSmartphone = productsItems.products.filter((productItem) => productItem.product_subcategory_name.includes('Smartphone'))
             .map(productItem => {
                 return (
                     <div className='products-items' key={productItem.product_id}>
@@ -137,7 +137,7 @@ class Home extends Component {
                     </div>
                 )
             })
-        const productsCamera = productsItems.products.filter((productItem) => productItem.product_category_name.includes('Smartcamera'))
+        const productsCamera = productsItems.products.filter((productItem) => productItem.product_subcategory_name.includes('Smartcamera'))
             .map(productItem => {
                 return (
                     <div className='products-items' key={productItem.product_id}>
@@ -145,7 +145,7 @@ class Home extends Component {
                     </div>
                 )
             })
-        const productsTv = productsItems.products.filter((productItem) => productItem.product_category_name.includes('TV'))
+        const productsTv = productsItems.products.filter((productItem) => productItem.product_subcategory_name.includes('TV'))
             .map(productItem => {
                 return (
                     <div className='products-items' key={productItem.product_id}>
@@ -153,7 +153,7 @@ class Home extends Component {
                     </div>
                 )
             })
-        const productsComputer = productsItems.products.filter((productItem) => productItem.product_category_name.includes('Computer'))
+        const productsComputer = productsItems.products.filter((productItem) => productItem.product_subcategory_name.includes('Computer'))
             .map(productItem => {
                 return (
                     <div className='products-items' key={productItem.product_id}>
@@ -161,7 +161,7 @@ class Home extends Component {
                     </div>
                 )
             })
-        const productsGames = productsItems.products.filter((productItem) => productItem.product_category_name.includes('Video-Games'))
+        const productsGames = productsItems.products.filter((productItem) => productItem.product_subcategory_name.includes('Video-Games'))
             .map(productItem => {
                 return (
                     <div className='products-items' key={productItem.product_id}>
@@ -169,7 +169,7 @@ class Home extends Component {
                     </div>
                 )
             })
-        const productsHeadphones = productsItems.products.filter((productItem) => productItem.product_category_name.includes('Headphones'))
+        const productsHeadphones = productsItems.products.filter((productItem) => productItem.product_subcategory_name.includes('Headphones'))
             .map(productItem => {
                 return (
                     <div className='products-items' key={productItem.product_id}>

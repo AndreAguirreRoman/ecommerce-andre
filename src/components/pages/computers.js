@@ -84,7 +84,7 @@ class Computers extends Component {
     }
 
     render() {
-        const computers = this.props.products.filter((productItem) => productItem.product_category_name.includes('Computer')).map(productItem => {
+        const computers = this.props.products.filter((productItem) => productItem.product_subcategory_name.includes('Computer')).map(productItem => {
             return (
                 <ProductDesign key={productItem.product_id} className='computers__wrapper-item design' productItem={productItem} />
             )

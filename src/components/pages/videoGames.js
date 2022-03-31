@@ -84,7 +84,7 @@ class VideoGames extends Component {
     }
 
     render() {
-        const videoGames = this.props.products.filter((productItem) => productItem.product_category_name.includes('Video-Games')).map(productItem => {
+        const videoGames = this.props.products.filter((productItem) => productItem.product_subcategory_name.includes('Video-Games')).map(productItem => {
             return (
                 <ProductDesign key={productItem.product_id} className='video-games__wrapper-item design' productItem={productItem} />
             )

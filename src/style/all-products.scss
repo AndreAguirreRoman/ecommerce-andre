@@ -2,7 +2,7 @@
 	grid-column: s/e;
 	grid-row: extra-s/extra-e;
 
-	grid-template-rows: [title-s]100px[title-e content-s]1fr[content-e];
+	grid-template-rows: [title-s] 100px [title-e content-s] 1fr [content-e];
 	@media screen and (max-width: 414px) {
 		width: 350px;
 		overflow: scroll;
@@ -20,8 +20,8 @@
 	}
 	&__items {
 		display: grid !important;
-		grid-template-columns: [items-s]4fr[items-e cart-s] 1fr [cart-e] !important;
-		grid-template-rows: [s]1fr[e];
+		grid-template-columns: [items-s] 4fr [items-e cart-s] 1fr [cart-e] !important;
+		grid-template-rows: [s] 1fr [e];
 		grid-row: content-s/content-e;
 		width: 100%;
 
@@ -102,10 +102,18 @@
 	&-item {
 		text-decoration: none;
 		color: $main-black;
-		height: 230px;
+		
 		&-wrapper {
 			&__img {
+				height: 191px;
+				width: 191px;	
+				background-color: white;
 				img {
+					height: 161px;
+					width: 161px;
+					padding-left: 15px;
+					padding-top: 10px;
+					object-fit: contain;
 					border-radius: 7px
 						7px 0px 0px;
 				}
@@ -115,11 +123,11 @@
 				border-radius: 0px 0px
 					7px 7px;
 				display: grid;
-				grid-template-columns: [info-s]150px[info-e bttn-s]1fr[bttn-e];
-				grid-template-rows: [s]1fr[m]1fr[e];
+				grid-template-columns: [info-s] 150px [info-e bttn-s] 1fr [bttn-e];
+				grid-template-rows: [s] 1fr [m] 1fr [e];
 
 				@media screen and (max-width: 414px) {
-					grid-template-columns: [info-s]100px[info-e bttn-s]1fr[bttn-e];
+					grid-template-columns: [info-s] 100px [info-e bttn-s] 1fr [bttn-e];
 				}
 
 				&-brand,
