@@ -4,7 +4,7 @@ import CartPageItems from './cartPageItems';
 
 import * as actions from '../../actions';
 import { connect } from 'react-redux';
-
+import history from '../../history';
 class CartPageDesign extends Component {
     render() {
         const { className } = this.props;
