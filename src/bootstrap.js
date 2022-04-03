@@ -39,6 +39,7 @@ import Order from "./components/order/orderReview";
 import Checkout from './components/order/checkout';
 import AddressEdit from "./components/account/addressEdit";
 import NameEdit from "./components/account/nameEdit";
+import CartPage from "./components/cart/cartPage";
 
 function main() {
   ReactDOM.render(
@@ -64,6 +65,7 @@ function main() {
             <Route path='/account/address' exact component={AddressPage} />
             <Route path='/account/address/edit' exact component={AddressEdit} />
             <Route path='/account/name' exact component={NameEdit} />
+            <Route path='/user/cart' exact component={CartPage} />
 
             <Route path='/orders' exact component={PurchaseHistory} />
             <Route path='/order/review' exact component={Order} />

@@ -1,0 +1,17 @@
+.cart-page {
+    grid-column: s/e;
+    grid-row: content-s/content-e;
+
+    .no-scroll {
+        overflow: visible;
+    }
+
+    .cart-items__products-item {
+        height: 100%;
+    }
+
+    .cart-page__footer {
+        // padding-top: 30px;
+        margin-bottom: 40px;
+    }
+}

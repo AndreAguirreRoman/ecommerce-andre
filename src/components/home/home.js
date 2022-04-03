@@ -53,10 +53,11 @@ class Home extends Component {
             },
             {
                 _id: 1,
-                title: 'Orders',
-                active: true,
-                path: '/orders'
-            },
+                title: <div className='=' heder-icon>
+                    <div className='header-icon__icon'><i className="fas fa-shopping-cart"></i></div>
+                </div>,
+                path: '/user/cart'
+            }
         ]
 
         const navbarLinks = [

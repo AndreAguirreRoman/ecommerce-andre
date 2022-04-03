@@ -1,6 +1,5 @@
 import React from 'react';
 
-import history from '../../history';
 import PageTitle from '../pageTitle';
 export function OrderSummaryProducts({ className, products }) {
     // console.log("orderProducts", products)
